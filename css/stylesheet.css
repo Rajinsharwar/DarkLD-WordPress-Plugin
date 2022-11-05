@@ -1,0 +1,291 @@
+:root {
+	--ld-dark-mode-header-bg: #272727;
+	--ld-dark-mode-sidebar-bg: #1c1c1c;
+	--ld-dark-mode-content-bg: #121212;
+	--ld-dark-mode-content-text: #dedede;
+	--ld-dark-mode-text-secondary: #aaa;
+	--ld-dark-mode-highlight-color: salmon;
+}
+
+/* Header Area */
+.learndash-wrapper .ld-focus .ld-focus-header,
+.learndash-wrapper .ld-focus .ld-focus-header .ld-brand-logo {
+	background: var(--ld-dark-mode-header-bg);
+}
+.learndash-wrapper .ld-focus .ld-focus-header {
+	border: 0;
+	color: var(--ld-dark-mode-content-text);
+}
+
+.learndash-wrapper .ld-focus .ld-focus-header .ld-button {
+	color: var(--ld-dark-mode-content-text);
+}
+.learndash-wrapper .ld-focus .ld-focus-header .ld-button:hover,
+.learndash-wrapper .ld-focus .ld-focus-header .ld-button:active,
+.learndash-wrapper .ld-focus .ld-focus-header .ld-button:focus {
+	color: var(--ld-dark-mode-highlight-color);
+}
+
+.learndash-wrapper .ld-focus .ld-focus-header .ld-progress,
+.learndash-wrapper .ld-focus .ld-focus-header .ld-content-action,
+.learndash-wrapper .ld-focus .ld-focus-header .ld-user-menu {
+	border-color: rgba(255,255,255,0.1);
+}
+
+.learndash-wrapper .ld-focus .ld-focus-header .ld-user-menu .ld-user-menu-items {
+	background: var(--ld-dark-mode-header-bg);
+}
+.learndash-wrapper .ld-focus .ld-focus-header .ld-user-menu .ld-user-menu-items::before {
+	border-bottom-color: var(--ld-dark-mode-header-bg);
+}
+
+.learndash-wrapper .ld-focus .ld-focus-header .ld-user-menu .ld-user-menu-items a:hover {
+	color: var(--ld-dark-mode-highlight-color);
+}
+
+/* Progress Bar */
+.learndash-wrapper .ld-progress .ld-progress-heading .ld-progress-stats .ld-progress-percentage {
+	color: var(--ld-dark-mode-highlight-color);
+}
+.learndash-wrapper .ld-focus .ld-focus-header .ld-progress .ld-progress-bar {
+	background-color: rgba(255,255,255,0.1);
+}
+.learndash-wrapper .ld-focus .ld-progress .ld-progress-bar .ld-progress-bar-percentage {
+	background-color: var(--ld-dark-mode-highlight-color);
+}
+
+/* Main Content Area */
+body.ld-in-focus-mode,
+body.ld-in-focus-mode div.learndash-wrapper {
+	background: var(--ld-dark-mode-content-bg);
+}
+
+.ld-focus .ld-focus-content {
+	color: var(--ld-dark-mode-content-text);
+}
+
+.ld-focus .ld-focus-content h1,
+.ld-focus .ld-focus-content h2,
+.ld-focus .ld-focus-content h3,
+.ld-focus .ld-focus-content h4,
+.ld-focus .ld-focus-content h5,
+.ld-focus .ld-focus-content h6 {
+	color: var(--ld-dark-mode-content-text);
+}
+
+.ld-focus .ld-tabs-content a {
+	color: var(--ld-dark-mode-content-text);
+	text-decoration: underline;
+}
+.ld-focus .ld-focus-content a:hover {
+	color: var(--ld-dark-mode-highlight-color);
+}
+
+/* Breadcrumbs */
+.learndash-wrapper .ld-topic-status {
+	background: transparent;
+}
+.learndash-wrapper .ld-breadcrumbs {
+	background: rgba(255,255,255,0.05);
+	color: var(--ld-dark-mode-text-secondary);
+}
+
+/* Tabs */
+.learndash-wrapper .ld-tabs .ld-tabs-navigation .ld-tab {
+	color: var(--ld-dark-mode-text-secondary);
+}
+.learndash-wrapper .ld-tabs .ld-tabs-navigation::after {
+	background: rgba(255,255,255,0.05);
+}
+.learndash-wrapper .ld-tabs .ld-tabs-navigation .ld-tab.ld-active,
+.learndash-wrapper .ld-tabs .ld-tabs-navigation .ld-tab:hover,
+.learndash-wrapper .ld-tabs .ld-tabs-navigation .ld-tab:active,
+.learndash-wrapper .ld-tabs .ld-tabs-navigation .ld-tab:focus {
+	color: var(--ld-dark-mode-highlight-color)
+}
+.learndash-wrapper .ld-tabs .ld-tabs-navigation .ld-tab.ld-active::after {
+	background: var(--ld-dark-mode-highlight-color);
+}
+
+/* Lesson Content */
+.learndash-wrapper .ld-table-list .ld-table-list-header {
+	background: rgba(255,255,255,0.05);
+	border-bottom: 1px solid var(--ld-dark-mode-content-bg);
+	color: var(--ld-dark-mode-text-secondary);
+}
+.learndash-wrapper .ld-topic-list.ld-table-list .ld-table-list-lesson-details .ld-lesson-list-progress {
+	border-color: var(--ld-dark-mode-text-secondary);
+}
+
+.learndash-wrapper .ld-table-list .ld-table-list-items {
+	background: transparent;
+	border-color: rgba(255,255,255,0.05);
+}
+.learndash-wrapper .ld-table-list .ld-table-list-item {
+	border-color: rgba(255,255,255,0.05);
+}
+.learndash-wrapper .ld-table-list a.ld-table-list-item-preview {
+	color: #fff;
+}
+.learndash-wrapper .ld-topic-list.ld-table-list .ld-table-list-item .ld-table-list-item-preview:hover,
+.learndash-wrapper .ld-topic-list.ld-table-list .ld-table-list-item .ld-table-list-item-preview:active,
+.learndash-wrapper .ld-topic-list.ld-table-list .ld-table-list-item .ld-table-list-item-preview:focus {
+	background: rgba(255,255,255,0.05);
+	color: var(--ld-dark-mode-highlight-color);
+}
+
+/* Bottom Navigation */
+.learndash-wrapper .ld-content-actions > a,
+.learndash-wrapper .ld-content-actions .ld-content-action .ld-course-step-back {
+	color: var(--ld-dark-mode-content-text);
+}
+.learndash-wrapper .ld-content-actions > a:hover,
+.learndash-wrapper .ld-content-actions .ld-content-action .ld-course-step-back:hover {
+	color: var(--ld-dark-mode-highlight-color);
+}
+
+.learndash-wrapper .ld-button,
+.learndash-wrapper .ld-content-actions .ld-button,
+.learndash-wrapper .ld-focus-comment .ld-comment-reply a.comment-reply-link,
+.learndash-wrapper .ld-focus-comments .form-submit #submit {
+	background: rgba(255,255,255,0.07);
+	color: var(--ld-dark-mode-content-text);
+}
+.learndash-wrapper .ld-button:hover,
+.learndash-wrapper .ld-content-actions .ld-button:hover,
+.learndash-wrapper .ld-focus-comment .ld-comment-reply a.comment-reply-link:hover,
+.learndash-wrapper .ld-focus-comments .form-submit #submit:hover {
+	background: rgba(255,255,255,0.1);
+	color: var(--ld-dark-mode-highlight-color);
+}
+
+/* Comments */
+#cancel-comment-reply-link,
+.comment-form-reply-title,
+.learndash-wrapper .ld-focus-comments .comment-respond #reply-title,
+.ld-comment-body p,
+.ld-focus-comments p,
+#cancel-comment-reply-link,
+.ld-focus-comments .logged-in-as a,
+.learndash-wrapper .ld-focus-comment .ld-comment-avatar .ld-comment-avatar-author .ld-comment-author-name,
+.learndash-wrapper .ld-focus-comment .ld-comment-avatar .ld-comment-avatar-author a.ld-comment-permalink {
+	color: var(--ld-dark-mode-content-text);
+}
+.learndash-wrapper .ld-focus-comment .ld-comment-avatar .ld-comment-avatar-author a.ld-comment-permalink {
+	opacity: 0.5;
+}
+#cancel-comment-reply-link:hover {
+	color: var(--ld-dark-mode-highlight-color);
+}
+
+.learndash-wrapper .ld-focus-comments #commentform textarea#comment {
+	border: 0;
+	background: rgba(255,255,255,0.05);
+	color: var(--ld-dark-mode-text-secondary);
+}
+.learndash-wrapper .ld-focus-comments #commentform textarea#comment:focus {
+	box-shadow: inset 0 0 0 1px rgba(255,255,255,0.1);
+	background: rgba(255,255,255,0.08);
+	color: var(--ld-dark-mode-content-text);
+}
+
+.ld-focus-comments .ld-comment-wrapper,
+.learndash-wrapper .ld-focus-comment.bypostauthor>.ld-comment-wrapper,
+.learndash-wrapper .ld-focus-comment.role-group_leader > .ld-comment-wrapper,
+.learndash-wrapper .ld-focus-comment.role-administrator > .ld-comment-wrapper {
+	background: rgba(255,255,255,0.05);
+}
+
+.learndash-wrapper .ld-focus-comment.bypostauthor > .ld-comment-wrapper > .ld-comment-avatar img,
+.learndash-wrapper .ld-focus-comment.role-group_leader > .ld-comment-wrapper > .ld-comment-avatar img,
+.learndash-wrapper .ld-focus-comment.role-administrator > .ld-comment-wrapper > .ld-comment-avatar img {
+	border-color: var(--ld-dark-mode-highlight-color);
+}
+
+.learndash-wrapper .ld-expand-button.ld-button-alternate {
+	color: var(--ld-dark-mode-content-text);
+}
+.learndash-wrapper .ld-expand-button.ld-button-alternate .ld-icon {
+	background: none;
+}
+.learndash-wrapper .ld-expand-button.ld-button-alternate:hover,
+.learndash-wrapper .ld-expand-button.ld-button-alternate:hover .ld-icon,
+.learndash-wrapper .ld-expand-button.ld-button-alternate .ld-icon:hover {
+	color: var(--ld-dark-mode-highlight-color);
+	background: none;
+}
+
+.learndash-wrapper .ld-focus-comments__heading {
+	border-color: rgba(255,255,255,0.1);
+}
+
+/* Sidebar */
+.learndash-wrapper .ld-focus .ld-focus-sidebar,
+/* Topics List */
+.learndash-wrapper .ld-focus-sidebar .ld-table-list .ld-table-list-items {
+	background: var(--ld-dark-mode-sidebar-bg);
+	color: var(--ld-dark-mode-content-text);
+}
+.learndash-wrapper .ld-course-navigation .ld-lesson-item-preview a.ld-lesson-item-preview-heading,
+.learndash-wrapper .ld-course-navigation .ld-table-list.ld-topic-list .ld-table-list-item .ld-table-list-title a,
+.learndash-wrapper .ld-course-navigation .ld-table-list.ld-topic-list .ld-table-list-item a.ld-table-list-item-preview {
+	color: var(--ld-dark-mode-content-text);
+}
+.learndash-wrapper .ld-course-navigation .ld-lesson-item-preview a.ld-lesson-item-preview-heading:hover,
+.learndash-wrapper .ld-course-navigation .ld-table-list.ld-topic-list .ld-table-list-item a.ld-table-list-item-preview:hover,
+.learndash-wrapper .ld-course-navigation .ld-lesson-item-preview a.ld-lesson-item-preview-heading:active,
+.learndash-wrapper .ld-course-navigation .ld-table-list.ld-topic-list .ld-table-list-item a.ld-table-list-item-preview:active,
+.learndash-wrapper .ld-course-navigation .ld-lesson-item-preview a.ld-lesson-item-preview-heading:focus,
+.learndash-wrapper .ld-course-navigation .ld-table-list.ld-topic-list .ld-table-list-item a.ld-table-list-item-preview:focus {
+	background: rgba(255,255,255,0.1);
+	color: #fff;
+}
+
+/* Line Separators */
+.learndash-wrapper .ld-course-navigation .ld-topic-list.ld-table-list .ld-table-list-item .ld-table-list-item-preview,
+.learndash-wrapper .ld-focus .ld-focus-sidebar .ld-course-navigation .ld-lesson-item {
+	border-color: rgba(255,255,255,0.1);
+}
+
+/* topic/quiz sep */
+.learndash-wrapper .ld-course-navigation .ld-sep {
+	color: rgba(255,255,255,0.2);
+}
+
+/* Sidebar: Current Item */
+.learndash-wrapper .ld-course-navigation .ld-lesson-item.ld-is-current-lesson .ld-lesson-item-preview-heading,
+.learndash-wrapper .ld-course-navigation .ld-lesson-item.ld-is-current-lesson .ld-lesson-title,
+.learndash-wrapper .ld-focus .ld-focus-sidebar .ld-course-navigation .ld-topic-list.ld-table-list .ld-table-list-item .ld-table-list-item-preview.ld-is-current-item {
+	color: var(--ld-dark-mode-highlight-color);
+}
+.learndash-wrapper .ld-focus .ld-focus-sidebar .ld-course-navigation .ld-topic-list.ld-table-list .ld-table-list-item .ld-table-list-item-preview.ld-is-current-item {
+	background: rgba(255,255,255,0.1);
+}
+
+/* Sidebar: Course Heading */
+.learndash-wrapper .ld-focus .ld-focus-sidebar .ld-course-navigation-heading {
+	background: var(--ld-dark-mode-sidebar-bg);
+	border-bottom: 3px solid rgba(255,255,255,0.1);
+}
+.learndash-wrapper .ld-focus .ld-focus-sidebar .ld-course-navigation-heading h3 a:hover {
+	color: var(--ld-dark-mode-highlight-color);
+}
+/* Open/Close Icon */
+.learndash-wrapper .ld-focus .ld-focus-sidebar .ld-focus-sidebar-trigger:hover .ld-icon::before {
+	color: var(--ld-dark-mode-highlight-color);
+}
+
+/* Sidebar: Section Headings */
+.learndash-wrapper .ld-focus .ld-focus-sidebar .ld-course-navigation .ld-lesson-item-section-heading {
+	color: var(--ld-dark-mode-text-secondary);
+	border-top: 2px solid rgba(255,255,255,0.1);
+}
+
+/* Tooltips */
+#learndash-tooltips .ld-tooltip {
+	background: #eee;
+	color: var(--ld-dark-mode-content-bg);
+}
+#learndash-tooltips .ld-tooltip::after {
+	background: #eee;
+}
